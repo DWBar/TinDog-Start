@@ -1,16 +1,12 @@
-/*****Code*****/
-@media (max-width: 480px) {
-
-.rotateMobile{
-transform:rotate(90deg);
--ms-transform:rotate(90deg); /* IE 9 */
--moz-transform:rotate(90deg); /* Firefox */
--webkit-transform:rotate(90deg); /* Safari and Chrome */
--o-transform:rotate(90deg); /* Opera */
-}
-}
-
 /*****Tag Selector*****/
+a:link { text-decoration: none; }
+
+a:visited { text-decoration: none; }
+
+a:hover { text-decoration: none; }
+
+a:active { text-decoration: none; }
+
 body {
   font-family: "Montserrat";
 }
@@ -18,11 +14,36 @@ body {
 
 h1 {
   font-family: "Montserrat-Bold";
-  font-size: 3rem;
+  font-size: 3.5rem;
   line-height: 1.5;
 }
 
-/*****Class Selector*****/
+h2 {
+  font-family: "Montserrat-Bold";
+  font-size: 1.5rem;
+  line-height: 1.5;
+  padding-top: 7%;
+}
+
+h3 {
+  font-family: "Montserrat-Bold";
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+/******************************Class Selector******************************/
+
+.feature-box {
+  text-align: center;
+  padding: 2%;
+}
+
+/* NAVIGATION BAR SECTION */
+
+#dropdown-btn1 {
+    background-color: transparent;
+    border-color: transparent;
+}
 
 .btn-secondary {
   background-color: transparent;
@@ -58,28 +79,150 @@ h1 {
   line-height: 1.5;
 }
 
-/* IMAGES */
-.title-image {
-  width: 60%;
-}
-
-/*****ID*****/
+/* TITLE SECTION */
 
 #title {
   background-color: #ff4c68;
   color: #fff;
 }
 
-#dropdown-btn1 {
-    background-color: transparent;
-    border-color: transparent;
+.container-fluid {
+  padding: 3% 15% 7%;
 }
 
-
-
-
-/*
-#button-bright {
-  background-color: dark;
+.title-image {
+  width: 20%;
+  transform: rotate(25deg);
+  position: absolute;
+  right: 20%;
 }
-*/
+
+@media (max-width: 1028px) {
+
+#title {
+  text-align: center;
+}
+
+.title-image {
+  transform: rotate(0);
+  position: static;
+  width: 55%;
+}
+
+  /* .container-fluid {
+    transform: rotate(0);
+    position: static;
+  } */
+}
+
+/* FEATURES SECTION */
+
+#features {
+  background-color: #fff;
+  padding: 7% 15%;
+  position: relative;
+}
+
+.icon {
+  color: #ef8172;
+  margin-bottom: 1.1rem;
+}
+
+.icon:hover {
+  color: #ff4c68;
+}
+
+.text-bullet {
+  font-size: 1rem;
+  color: #8F8F8F;
+  text-align: center;
+}
+
+/* TESTIMONIAL CAROUSEL */
+
+#carouselExampleControls {
+  padding: 3% 15%;
+  text-align: center;
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.carousel-item {
+  padding: 7% 15%;
+}
+
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 10%;
+}
+
+/* PRESS SECTION */
+
+#press {
+  background-color: #ff4c68;
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.press-image {
+  width: 13%;
+  margin: 20px 20px 50px;
+}
+
+/* PRICING */
+#pricing {
+  text-align: center;
+}
+
+#pricing-subtitle {
+  padding-bottom: 4%;
+  color: #8F8F8F;
+}
+
+#sign-up {
+  background-color: #ef8172;
+}
+
+.card {
+  text-align: center;
+  font-family: Montserrat-Bold;
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 10px;
+}
+
+.card-footer {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+.card-header {
+  background-color: #ff4c68;
+}
+
+.card-link {
+  color: #fff;
+}
+
+.card-text {
+  font-size: .9rem;
+}
+
+.card-title {
+  color: #fff;
+}
+
+/* CALL TO ACTION */
+
+#cta {
+  background-color: #ff4c68;
+  color: #fff;
+  font-family: Montserrat-bold;
+  text-align: center;
+}
+
+.cta-txt {
+  font-size: 3rem;
+  padding: 7% 15%;
+}
